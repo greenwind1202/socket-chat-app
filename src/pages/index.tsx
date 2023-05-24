@@ -84,7 +84,9 @@ export default function Home() {
   };
 
   const scrollToBottom = () => {
-    messagesEnd.current.scrollTop = messagesEnd.current.scrollHeight;
+    if (messagesEnd.current) {
+      messagesEnd.current.scrollTop = messagesEnd.current.scrollHeight;
+    }
   };
 
   return !chosenUsername ? (
