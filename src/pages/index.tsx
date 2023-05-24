@@ -116,9 +116,9 @@ export default function Home() {
       </main>
     </div>
   ) : (
-    <div class="h-screen bg-gray-300">
-      <div class="flex justify-center items-center h-screen ">
-        <div class="w-full h-screen bg-gray-200 rounded shadow-2xl">
+    <div className="h-screen bg-gray-300">
+      <div className="flex justify-center items-center h-screen ">
+        <div className="w-full h-screen bg-gray-200 rounded shadow-2xl">
           <nav className="w-full h-10 bg-gray-900 rounded-tr rounded-tl flex justify-between items-center">
             <div className="flex justify-center items-center">
               {" "}
