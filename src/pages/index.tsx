@@ -85,7 +85,9 @@ export default function Home() {
 
   const scrollToBottom = () => {
     if (messagesEnd.current) {
-      messagesEnd.current.scrollTop = messagesEnd.current.scrollHeight;
+      (messagesEnd.current as any).scrollTop = (
+        messagesEnd.current as any
+      ).scrollHeight;
     }
   };
 
