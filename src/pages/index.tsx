@@ -27,7 +27,7 @@ export default function Home() {
 
   const socketInitializer = async () => {
     // We just call it because we don't need anything else out of it
-    await fetch("https://socket-chat-app-khaki.vercel.app/api/socket");
+    await fetch("/api/socket");
 
     socket = io();
 
